@@ -1,0 +1,15 @@
+.messenger {
+  display: flex;
+  margin: 44px 44px 44px 124px;
+
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(153, 163, 174, 0.14);
+
+  &__chat {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 850px) {
+    margin: 45px 10px 0 50px;
+  }
+}

@@ -1,0 +1,72 @@
+html,
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-width: 0;
+}
+
+html {
+  background-color: #f9fafc;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin-left: 80px;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  overflow: hidden;
+}
+
+/*to fix autofill background*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}

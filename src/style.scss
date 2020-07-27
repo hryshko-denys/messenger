@@ -1,3 +1,7 @@
-h1 {
-  color: green;
-}
+@import "./styles/variables.scss";
+@import "./styles/reset.scss";
+@import "./styles/header.scss";
+@import "./styles/sidebar.scss";
+@import "./styles/messenger.scss";
+@import "./styles/chats.scss";
+@import "./styles/current-chat.scss";

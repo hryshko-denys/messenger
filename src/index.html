@@ -3,16 +3,268 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Template</title>
+    <title>Messenger</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="images/main/telegram.svg">
     <link rel="stylesheet" href="style.scss">
     <script
       type="module"
       src="main.js"
-      defer
+        defer
     >
     </script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <section class="sidebar">
+      <img
+        src="./images/sidebar/mainlogo.png"
+        alt="Main logo"
+        class="sidebar__logo"
+      >
+      <ul class="sidebar__list sidebar__list--disappear">
+        <li class="sidebar__item">
+          <img
+            class="sidebar__image"
+            src="./images/sidebar/calendar.svg"
+            alt="calendar"
+          >
+        </li>
+        <li class="sidebar__item">
+          <img
+            class="sidebar__image"
+            src="./images/sidebar/my-profile.svg"
+            alt="calendar"
+          >
+        </li>
+        <li class="sidebar__item">
+          <img
+            class="sidebar__image"
+            src="./images/sidebar/tool.svg"
+            alt="calendar"
+          >
+        </li>
+        <li class="sidebar__item">
+          <img
+            class="sidebar__image"
+            src="./images/sidebar/team.svg"
+            alt="calendar"
+          >
+        </li>
+        <li class="sidebar__item">
+          <img
+            class="sidebar__image"
+            src="./images/sidebar/messages.svg"
+            alt="calendar"
+          >
+        </li>
+      </ul>
+    </section>
+    <header class="header">
+      <div class="header__wrapper">
+        <ul class="header__list">
+          <li class="header__item">
+            Home
+            <svg
+              class="header__arrow"
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M4.39626 5.15214L0.683169 1.38059C0.44685 1.14068 0.44685 0.751695 0.683169 0.511895C0.919278 0.272077 1.30222 0.272077 1.53831 0.511895L4.82383 3.84913L8.10923 0.511992C8.34543 0.272174 8.72834 0.272174 8.96445 0.511992C9.20065 0.751811 9.20065 1.14077 8.96445 1.38069L5.2513 5.15224C5.13319 5.27214 4.97856 5.33203 4.82385 5.33203C4.66906 5.33203 4.51431 5.27203 4.39626 5.15214Z" fill="#0ad69c">
+            </svg>
+          </li>
+          <li class="header__item">
+            Network
+          </li>
+        </ul>
+        <div class="header__user">
+          Sarah Freeman
+        </div>
+      </div>
+    </header>
+    <main class="messenger">
+      <section class="messenger__chat chats">
+        <ul class="chats__list">
+          <li>
+            <div class="chats__item">
+              <div class="chats__image-wrapper">
+                <img
+                src="./images/main/miranda.png"
+                class="chats__image"
+                alt="Miranda Hops"
+                >
+              </div>
+              <div class="chats__text">
+                <div class="chats__name chats__name--active chats__name--mute">Miranda Hops</div>
+                <div class="chats__message chats__message--active">Excepteur sint occaecatar…</div>
+                <div class="chats__time">9:32</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chats__item">
+              <div class="chats__image-wrapper">
+                <img
+                src="images/main/barry.png"
+                class="chats__image"
+                alt="Barry Callebaut"
+              >
+              </div>
+              <div class="chats__text">
+                <div class="chats__name">Barry Callebaut</div>
+                <div class="chats__message">Nemo enim ipsam volupta…</div>
+                <div class="chats__time">22:01</div>
+              </div>
+            </div>
+            </div>
+          </li>
+          <li>
+            <div class="chats__item chats__item--active">
+              <div class="chats__image-wrapper">
+                <img
+                  src="./images/main/stacy.png"
+                 class="chats__image"
+                 alt="Stacey Dosh"
+                >
+              </div>
+              <div class="chats__text">
+                <div class="chats__name chats__name--active">Stacey Dosh</div>
+                <div class="chats__message">Ut enim ad minima veniam…</div>
+                <div class="chats__time">19:15</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chats__item">
+              <div class="chats__image-wrapper">
+                <img
+                  src="./images/main/michael.png"
+                  class="chats__image"
+                  alt="Michael Kors"
+                >
+              </div>
+              <div class="chats__text">
+                <div class="chats__name chats__name--active">Michael Kors</div>
+                <div class="chats__message">To take a trivial example…</div>
+                <div class="chats__time">13:49</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chats__item">
+              <div class="chats__image-wrapper">
+                <img
+                  src="images/main/johny.png"
+                  class="chats__image"
+                  alt="Johny Cash"
+                >
+              </div>
+              <div class="chats__text">
+                <div class="chats__name">Johny Cash</div>
+                <div class="chats__message">Great explorer of the truth…</div>
+                <div class="chats__time">10:25</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="chats__item">
+              <div class="chats__image-wrapper">
+                <img
+                  src="./images/main/satcy_dosh.png"
+                  class="chats__image"
+                  alt="Stacey Dosh"
+                >
+              </div>
+              <div class="chats__text">
+                <div class="chats__name">Stacey Dosh</div>
+                <div class="chats__message">Ut enim ad minima veniam…</div>
+                <div class="chats__time">08:53</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="messenger__current-chat current-chat">
+        <form action="#" class="current-chat__form">
+          <label for="search" class="current-chat__label current-chat__label--loop">
+            <input
+              id="search"
+              name="search"
+              type="text"
+              class="current-chat__input"
+              placeholder="Search message..."
+            >
+          </label>
+          <img
+            src="./images/main/back.svg"
+            alt="back"
+            class="current-chat__back"
+          >
+          <div class="current-chat__messages">
+            <div class="current-chat__date">
+              Today, 17.03.2018
+            </div>
+            <div class="current-chat__message">
+              <div class="current-chat__text">
+                On the other hand, we denounce with righteous indignation!
+              </div>
+              <div class="current-chat__time">
+                01:14
+              </div>
+            </div>
+            <div class="current-chat__message">
+              <div class="current-chat__text">
+                Which is the same as saying?
+              </div>
+              <div class="current-chat__time">
+                01:38
+              </div>
+            </div>
+            <div class="current-chat__message">
+              <div class="current-chat__text">
+                But in certain circumstances and owing to the claims of duty
+                or the obligations of business it will frequently occur that pleasures
+              </div>
+              <div class="current-chat__time">
+                01:14
+              </div>
+            </div>
+            <div class="current-chat__message">
+              <div class="current-chat__text">
+                To take a trivial example, which of us ever undertakes)
+              </div>
+              <div class="current-chat__time">
+                01:38
+              </div>
+            </div>
+          </div>
+          <div class="current-chat__new-messages">
+            <label for="new-message" class="current-chat__label">
+              <input
+                id="new-message"
+                name="new-message"
+                type="text"
+                class="current-chat__input current-chat__input--send"
+                placeholder="Write a message…"
+              >
+            </label>
+            <div class="current-chat__smiles">
+              <button class="current-chat__button current-chat__button--smile"></button>
+              <button class="current-chat__button current-chat__button--attach"></button>
+              <button class="current-chat__button current-chat__button--send"></button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
