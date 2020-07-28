@@ -68,6 +68,10 @@
   @media screen and (max-width: 850px) {
     width: 40px;
 
+    &__logo {
+      cursor: pointer;
+    }
+
     &__list--disappear {
       transform: translateX(-100px);
     }

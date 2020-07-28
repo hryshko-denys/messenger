@@ -9,6 +9,16 @@
     width: 30%;
   }
 
+  &__heading {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
   @media screen and (max-width: 850px) {
     margin: 45px 10px 0 50px;
   }
